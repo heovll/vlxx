@@ -1,0 +1,16 @@
+{
+  "name": "vlxx-ms-stremio-addon",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check vlxx-ms.js && node --check media-proxy.js",
+    "test": "node test-vlxx-ms.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.1.0",
+    "stremio-addon-sdk": "^1.6.10"
+  }
+}

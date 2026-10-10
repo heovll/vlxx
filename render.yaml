@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vlxx-phd-addon
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: VLXX_BASE_URL
+        value: https://vlxx.phd
+      - key: HOST
+        value: 0.0.0.0
+      - key: NODE_ENV
+        value: production

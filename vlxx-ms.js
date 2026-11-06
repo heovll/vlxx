@@ -1,4 +1,4 @@
-const BASE_URL = (process.env.VLXX_BASE_URL || 'https://vlxx.phd').replace(/\/$/, '');
+const BASE_URL = (process.env.VLXX_BASE_URL || 'https://vlxx.app').replace(/\/$/, '');
 const PUBLIC_URL = (process.env.PUBLIC_URL || `http://localhost:${process.env.PORT || 10004}`).replace(/\/$/, '');
 const DEFAULT_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/151 Safari/537.36';
 const CACHE_TTL = 5 * 60 * 1000;

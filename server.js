@@ -14,7 +14,7 @@ app.use(cors());
 
 const PORT = Number(process.env.PORT || 10004);
 const HOST = process.env.HOST || '0.0.0.0';
-const BASE_URL = (process.env.VLXX_BASE_URL || 'https://vlxx.phd').replace(/\/$/, '');
+const BASE_URL = (process.env.VLXX_BASE_URL || 'https://vlxx.app').replace(/\/$/, '');
 const PUBLIC_URL = (process.env.PUBLIC_URL || process.env.RENDER_EXTERNAL_URL || `http://localhost:${PORT}`).replace(/\/$/, '');
 const PAGE_SIZE = 20;
 const manifest = {

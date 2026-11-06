@@ -71,7 +71,7 @@ builder.defineStreamHandler(async ({ id }) => {
 
 const router = getRouter(builder.getInterface());
 const imageCache = new Map();
-const ALLOWED_IMAGE_HOSTS = new Set(['vlxx.phd', 'vlxx.ms', 'vlxx.moi', 'cdn.vlcontent.com']);
+const ALLOWED_IMAGE_HOSTS = new Set(['vlxx.app', 'vlxx.ms', 'vlxx.moi', 'cdn.vlcontent.com']);
 function isAllowedImageHost(hostname) {
   const host = String(hostname || '').toLowerCase();
   return ALLOWED_IMAGE_HOSTS.has(host) || host.endsWith('.vlstream.net');
